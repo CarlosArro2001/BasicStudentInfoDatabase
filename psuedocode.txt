@@ -1,0 +1,111 @@
+print "Welcome to the student information program choose the following numbers for each one of the actions
+      1)Access Basic student Information
+      2)Access Student Track Record
+      3)Access Students E.C.A (extra curricular activities)
+      4)Exit Program"
+
+//assuming that the user will be able to append to the array so it could be any size
+declare newArray stdID
+declare newArray stdName
+declare newArray stdAge
+declare newArray stdDOB
+declare newArray stdGen
+declare newArray natID
+declare newArray stdNat
+declare newArray stdGrade
+
+//main function
+let choice be 0
+while choice is not 4 do the following:
+if the user enters  1 then:
+run the stdInfo function
+if the user enters 2 then:
+run the track function
+if the user enters 3 then:
+run the eca function
+if the user enters 4 then:
+exit the program
+
+//end of main functions------------------------------------------------------------------------------------------------
+
+//stdInfo function
+let choice be 0
+let input be empty
+print "Welcome to the student information database enter the numbers for the following actions:
+      1)Read student data
+      2)Enter a new student's information"
+if the user entered 1 then :
+  print "Enter student ID"
+  if user entered student ID which is not found in stdID array then:
+  print "Error"
+  return false
+  if it is found then:
+  pertaining to the student ID position print out the details which are in the same position in the array as student ID.
+  print "Do you want to return to main menu?"
+  if user entered yes or Yes then :
+  return to main menu
+  if user entered no or No then :
+  then restart the whole function
+if the user entered 2 then :
+  enter the details
+  store/append those details into their data storage
+  display those details
+print "Do you want to return to main menu?"
+if user entered yes or Yes then :
+return to main menu
+if user entered no or No then :
+then restart the whole function
+
+//end of stdInfo function-----------------------------------------------------------------------------------------------
+
+
+//track function
+let choice be 0
+let grade be 0
+let subInput
+let input be empty
+print "Welcome to the Track record database enter the numbers for the following function
+      1)Enter new grade of student
+      2)Display grades of student"
+
+if user entered 1 then:
+  loop the entered ID to check if it is in the data storage
+    if entered ID is equal to the element:
+      break loop and continue with the if statement
+    if not then:
+      continue
+  enter the grade and store in grade
+  enter the subject and store in subInput
+  if subject is for example math then put grade in the math storage
+
+if user entered 2 then:
+  loop the entered ID to check if it is in the data storage
+    if entered ID is equal to the element:
+      break loop and continue with the if statement
+    if not then:
+      continue
+  display all grades
+
+print "Do you want to return to main menu?"
+if user entered yes or Yes then :
+return to main menu
+if user entered no or No then :
+then restart the whole function
+//end of track function-------------------------------------------------------------------------------------------------
+
+//eca function
+
+let idInput be empty
+loop the entered ID to check if it is in the data storage
+  if entered ID is equal to the element:
+    break loop and continue with the if statement
+  if not then:
+    continue with rest of function
+depending on the position of the ID is there any clubs and events in the storage with the same position present
+if there is clubs and events present then :
+display the clubs and events present
+print "Do you want to return to main menu?"
+if user entered yes or Yes then :
+return to main menu
+if user entered no or No then :
+then restart the whole function    
